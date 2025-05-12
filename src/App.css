@@ -20,8 +20,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px;
 }
 
 .App-link {
@@ -35,4 +35,124 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.balance-checker {
+  background-color: #1a1d24;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.selectors {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.chain-select,
+.token-select {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #4a4d57;
+  border-radius: 6px;
+  background-color: #2c303a;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chain-select:focus,
+.token-select:focus {
+  outline: none;
+  border-color: #61dafb;
+}
+
+.address-input,
+.validator-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #4a4d57;
+  border-radius: 6px;
+  background-color: #2c303a;
+  color: white;
+  font-size: 16px;
+}
+
+.address-input:focus,
+.validator-input:focus {
+  outline: none;
+  border-color: #61dafb;
+}
+
+.check-button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px 0;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.check-button:hover {
+  background-color: #4fa8c7;
+}
+
+.check-button:disabled {
+  background-color: #4a4d57;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #ff6b6b;
+  margin: 10px 0;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #2c303a;
+  border-radius: 6px;
+}
+
+.balance {
+  font-size: 24px;
+  font-weight: bold;
+  color: #61dafb;
+  margin: 10px 0;
+}
+
+.explorer-link {
+  display: inline-block;
+  color: #61dafb;
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: 1px solid #61dafb;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.explorer-link:hover {
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+.validator-section {
+  width: 90%;
+  max-width: 800px;
+  margin-top: 2rem;
+}
+
+.validator-section h2 {
+  color: #61dafb;
+  margin-bottom: 1rem;
 }

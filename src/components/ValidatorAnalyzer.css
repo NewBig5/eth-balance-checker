@@ -1,0 +1,62 @@
+.validator-analyzer {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search-section {
+  margin-bottom: 2rem;
+}
+
+.search-button {
+  height: 56px;
+}
+
+.error-alert {
+  margin-bottom: 1rem;
+}
+
+.chart-section {
+  padding: 20px;
+  margin-bottom: 2rem;
+  background-color: #fff;
+}
+
+.table-section {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.positive {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.negative {
+  color: #f44336;
+  font-weight: bold;
+}
+
+/* 响应式调整 */
+@media (max-width: 600px) {
+  .validator-analyzer {
+    padding: 10px;
+  }
+
+  .chart-section,
+  .table-section {
+    padding: 10px;
+  }
+
+  .table-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+} 
